@@ -1,0 +1,8 @@
+{
+  "name": "Basiturraza Taji — 3D Manga Developer Portfolio",
+  "description": "Interactive 3D anime and manga-inspired software developer portfolio of Basiturraza Taji (BCA Graduate, RTMNU 2026), featuring a Three.js supernatural school hallway and comic-panel chapters.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

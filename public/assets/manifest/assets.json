@@ -1,0 +1,66 @@
+{
+  "generatedAt": "2026-11-17",
+  "artDirection": "Full-site 3D Three.js corridor and chapter sculptures paired with original anime/manga editorial illustrations and open-source MIT procedural geometry",
+  "assets": [
+    {
+      "name": "Hero Developer Portrait Illustration",
+      "category": "characters",
+      "filePath": "/src/assets/images/hero_developer_portrait_1794977553857.jpg",
+      "originalSourceUrl": "Existing local project illustration (no new AI generation)",
+      "author": "Project Asset Library",
+      "licence": "Original Project Asset — Full Portfolio Usage",
+      "attributionRequirement": "None required",
+      "intendedUsage": "Chapter 01 Home Hero portrait card and 3D classroom shrine frame"
+    },
+    {
+      "name": "Twilight School Hallway Backdrop Illustration",
+      "category": "illustrations",
+      "filePath": "/src/assets/images/project_episode_hallway_1794977553647.jpg",
+      "originalSourceUrl": "Existing local project illustration (no new AI generation)",
+      "author": "Project Asset Library",
+      "licence": "Original Project Asset — Full Portfolio Usage",
+      "attributionRequirement": "None required",
+      "intendedUsage": "Chapter 04 Episode 01, 3D Episode Monolith 01, and 2D fallback backdrop"
+    },
+    {
+      "name": "Arcane Study Blueprint Illustration",
+      "category": "illustrations",
+      "filePath": "/src/assets/images/project_episode_shrine_1794977554807.jpg",
+      "originalSourceUrl": "Existing local project illustration (no new AI generation)",
+      "author": "Project Asset Library",
+      "licence": "Original Project Asset — Full Portfolio Usage",
+      "attributionRequirement": "None required",
+      "intendedUsage": "Chapter 04 Episode 02 and 3D Episode Monolith 02"
+    },
+    {
+      "name": "Nocturnal Archive Library Illustration",
+      "category": "illustrations",
+      "filePath": "/src/assets/images/project_episode_archive_1794977555432.jpg",
+      "originalSourceUrl": "Existing local project illustration (no new AI generation)",
+      "author": "Project Asset Library",
+      "licence": "Original Project Asset — Full Portfolio Usage",
+      "attributionRequirement": "None required",
+      "intendedUsage": "Chapter 04 Episode 03 and 3D Episode Monolith 03"
+    },
+    {
+      "name": "Three.js Open-Source 3D Geometries, Environment & Chapter Sculptures",
+      "category": "models",
+      "filePath": "/src/components/three/worldChaptersBuilder.ts & /src/components/three/japanesePropsBuilder.ts",
+      "originalSourceUrl": "https://github.com/mrdoob/three.js (Three.js r187 RoundedBoxGeometry, RoomEnvironment, procedural CanvasTexture, LatheGeometry, TubeGeometry & InstancedMesh)",
+      "author": "Three.js Authors & In-Code Procedural Builders",
+      "licence": "MIT License",
+      "attributionRequirement": "None required",
+      "intendedUsage": "Full-site 3D hallway with wainscoting & runner rug, Teru spirit doll, scholar desk lamp/laptop/books, chalkboard, spirit astrolabe with moons, 6 skill relics, 3 project monoliths, crimson torii gate, stone toro lanterns, Kitsune shrine, folding cranes, sakura petals, Tsukubai water basin, and animated wax-sealed envelope"
+    },
+    {
+      "name": "Lucide Icons & Original Ofuda SVG Favicon",
+      "category": "textures",
+      "filePath": "/public/favicon.svg",
+      "originalSourceUrl": "https://lucide.dev (MIT) & In-Code SVG/CSS screentones",
+      "author": "Lucide Contributors & In-Code Authoring",
+      "licence": "ISC / MIT License",
+      "attributionRequirement": "None required",
+      "intendedUsage": "UI icons, manga halftone screentones, and site favicon"
+    }
+  ]
+}

@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+:root {
+  --color-burgundy: #632D40;
+  --color-dark-wine: #301B29;
+  --color-pastel-pink: #E8BFC9;
+  --color-cream: #F6EBDD;
+  --color-warm-white: #FFF9F1;
+  --color-muted-blue: #A9BBCF;
+  --color-ink-black: #211E25;
+  --color-soft-red: #B84955;
+  --color-dusk-paper: #EDF1F5;
+
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@layer base {
+  html {
+    background-color: var(--color-cream);
+    color: var(--color-ink-black);
+    font-family: var(--font-sans);
+    scroll-behavior: auto;
+  }
+
+  body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: var(--color-cream);
+    color: var(--color-ink-black);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  .font-mono-tabular {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-soft-red);
+    outline-offset: 3px;
+  }
+}
+
+/* Manga halftone screentone patterns */
+.halftone-dots {
+  background-image: radial-gradient(rgba(33, 30, 37, 0.14) 1px, transparent 1px);
+  background-size: 8px 8px;
+}
+
+.halftone-dots-light {
+  background-image: radial-gradient(rgba(246, 235, 221, 0.12) 1px, transparent 1px);
+  background-size: 9px 9px;
+}
+
+.halftone-pink {
+  background-image: radial-gradient(rgba(184, 73, 85, 0.16) 1.15px, transparent 1.15px);
+  background-size: 10px 10px;
+}
+
+/* Subtle vintage manga paper grain */
+.paper-grain {
+  background-image:
+    linear-gradient(to right, rgba(99, 45, 64, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(99, 45, 64, 0.03) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+/* Hand-drawn comic panel frame */
+.manga-frame {
+  border: 2.5px solid var(--color-ink-black);
+  box-shadow: 6px 6px 0 var(--color-ink-black);
+}
+
+.manga-frame-burgundy {
+  border: 2.5px solid var(--color-ink-black);
+  box-shadow: 6px 6px 0 var(--color-burgundy);
+}
+
+.manga-frame-cream {
+  border: 2px solid var(--color-cream);
+  box-shadow: 5px 5px 0 rgba(184, 73, 85, 0.75);
+}
+
+/* Torn-edge visual motif via clean clip-path */
+.torn-paper-top {
+  clip-path: polygon(
+    0% 10px, 4% 2px, 8% 9px, 13% 1px, 18% 8px, 23% 2px, 28% 10px,
+    34% 3px, 40% 9px, 46% 1px, 52% 8px, 58% 2px, 64% 10px,
+    70% 2px, 76% 9px, 82% 1px, 88% 8px, 94% 2px, 100% 9px,
+    100% 100%, 0% 100%
+  );
+}
+
+/* Ensure deeply faded off-zone manga chapters let visitors interact directly with 3D world */
+[data-scroll-faded="true"] * {
+  pointer-events: none !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
